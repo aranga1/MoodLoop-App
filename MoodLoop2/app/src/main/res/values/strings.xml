@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MoodLoop</string>
+
+    <string name="title_section1">Now Playing</string>
+    <string name="title_section2">Listen Now</string>
+    <string name="title_section3">Playlists</string>
+    <string name="title_section4">Whats Playing?</string>
+    <string name="title_section5">Settings</string>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="neon_red">#80F00000</color>
+    <color name="lighter_black">#505050</color>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_player_page">PlayerPage</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

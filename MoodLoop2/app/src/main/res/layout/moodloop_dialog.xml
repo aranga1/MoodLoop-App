@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:id="@+id/moodloop_layout"
+    android:background="@drawable/moodloop_red_border"
+    android:layout_height="375dp">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/black"
+        android:background="@color/lighter_black"
+        android:src="@drawable/ic_clear_white_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:id="@+id/from_text_view"
+        android:layout_below="@+id/song_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moodloop"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerInParent="true"
+        android:text="MoodLoop Running. Press close to resume normal playback"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/song_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/to_text_view"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/moodloop"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/song_image_moodloop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currenttime_moodloop"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/song_title"
+        android:textSize="17sp"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_title"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/song_image_moodloop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/double_seekbar_holder"
+        android:layout_below="@+id/to_text_view"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+</RelativeLayout>
